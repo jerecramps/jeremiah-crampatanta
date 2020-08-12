@@ -1,0 +1,35 @@
+.cover {
+    max-width: 100%;
+    max-height: 100%;
+    width:100%;
+    opacity: .8;
+}
+
+.cover-container {
+  position: relative;
+
+}
+
+.title-page {
+    
+    font-size: 50px;
+    font-family: lucida console;
+    color: white;
+    border-style: double;
+    border-width: 2px;
+    border-color: antiquewhite;
+    background: black;
+    text-align: center;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.profile-icon {
+    color: white;
+}

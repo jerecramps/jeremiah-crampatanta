@@ -1,0 +1,52 @@
+.footer {
+    background: black;
+}
+.align {
+    align-self: center;
+}
+.content {
+    padding: 30px;
+    color:gainsboro;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.name-text {
+    color:gainsboro;
+}
+
+.name-text:hover {
+    color:white;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:right;
+    color:gainsboro
+}
+li {
+    float:left;
+    cursor: pointer;
+    padding-right: 30px;
+}
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+.fb{
+    color:#4267B2;
+}
+.twt {
+    color:#1DA1F2;
+}
+
+.in {
+    color:#2867B2;
+}
+.git {
+    color:gainsboro;
+}
+

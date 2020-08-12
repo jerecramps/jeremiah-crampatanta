@@ -1,0 +1,37 @@
+img.image-class {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+.headline {
+    font-size: 50px;
+    text-align: center;
+    font-family: Lucida Console;
+    padding: 1rem;
+}
+.content {
+    font-size: 20px;
+}
+.name {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.name-text {
+    color:black;
+}
+
+.name-text:hover {
+    color:gray;
+    text-decoration: none;
+}
+
+.date-created {
+    text-align: right;
+    padding: 15px;
+    font-family: Lucida Console;
+    font-weight: bold;
+}
+.blog-content {
+    margin: 50px;
+}
