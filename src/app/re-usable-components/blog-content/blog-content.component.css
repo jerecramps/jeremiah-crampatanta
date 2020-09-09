@@ -11,6 +11,7 @@ img.image-class {
 }
 .content {
     font-size: 20px;
+    font-family: monospace;
 }
 .name {
     padding: 20px;
@@ -19,6 +20,8 @@ img.image-class {
 
 .name-text {
     color:black;
+    
+    font-family: monospace;
 }
 
 .name-text:hover {
@@ -34,4 +37,25 @@ img.image-class {
 }
 .blog-content {
     margin: 50px;
+}
+
+.tag-content {
+    background: darkblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-style:italic;
+}
+
+.tag-content:hover {
+    color: antiquewhite;
+}
+
+.tags {
+    padding-bottom: 1rem;
+}
+.image {
+    text-align: center;
 }

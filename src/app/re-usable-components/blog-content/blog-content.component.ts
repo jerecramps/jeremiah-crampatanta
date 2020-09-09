@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { BlogDetailsModel } from '../../models/blog-details.model';
 
+//This is required
+import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'blog-content',
   templateUrl: './blog-content.component.html',
@@ -7,10 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogContentComponent implements OnInit {
 
-  constructor() { }
-  content: any;
+  @Input("BlogDetails") blogDetails: BlogDetailsModel;
+  constructor(private sanitizer:DomSanitizer) { }
   ngOnInit(): void {
-    this.content = "The font family of a text is set with the font-family property. The font-family property should hold several font names as a 'fallback' system. If the browser does not support the first font, it tries the next font, and so on. Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available."
+  }
+
+  transform(){
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.blogDetails.blogImage);
   }
 
 }

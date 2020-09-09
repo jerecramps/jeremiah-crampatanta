@@ -4,6 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedContentModule } from './shared-content/shared-content.module';
 import { PagesModule } from './pages/pages.module';
+import { BlogService } from './services/blog.service';
+import { ApiCallsService } from './services/api-calls/api-calls.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,9 +16,10 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     SharedContentModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BlogService, ApiCallsService],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
   

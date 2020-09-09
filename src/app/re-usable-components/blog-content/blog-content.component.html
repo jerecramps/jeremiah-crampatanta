@@ -1,15 +1,17 @@
 <div class="blog-content">
     <div class="container">
-        <div class="date-created">13 / 08 / 2020</div>
-        <div>
-            <img class="image-class" src="assets/test-1.png">
+        <div class="date-created">{{blogDetails.blogCreated}}</div>
+        <div class="image">
+            <img class="image-class" src="{{blogDetails.blogImage}}">
         </div>
         
-        <div class="headline">Jeremiah Crampatanta First Portfolio Website</div>
-        <div class="content">{{this.content | ellipsis : 300}}</div>
-        <div class="name"><i  class="fa fa-circle" aria-hidden="true"></i> <a class="name-text" href="#">  Jeremiah Crampatanta</a></div>
+        <div class="headline">{{blogDetails.blogTitle}}</div>
+        <div class="tags" >
+            <span *ngFor="let tags of blogDetails.blogTags; let i = index" class="tag-content">{{tags.tag_name}}</span>
+        </div>
+        <div class="content">{{blogDetails.blogContent | ellipsis : 300}}</div>
+        <div class="name"><i  class="fa fa-circle" aria-hidden="true"></i> <a class="name-text" [routerLink]="['/about']" routerLinkActive="active"> {{blogDetails.blogContentOwner}}</a></div>
     </div>
     
 </div>
 
-<!-- <div>tags</div> -->
